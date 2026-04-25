@@ -1,0 +1,105 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    min-height: 2000px; 
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.greeting {
+    font-size: 1.2em;
+}
+
+.text-italic-red { color: red; font-style: italic; }
+.text-italic-blue { color: blue; font-style: italic; }
+.text-underline-red { color: red; text-decoration: underline; }
+.text-underline-blue { color: blue; text-decoration: underline; }
+.text-bold-blue { color: blue; font-weight: bold; }
+.text-bold-red { color: red; font-weight: bold; }
+.text-link { color: blue; text-decoration: underline; cursor: pointer; }
+
+.comic-font {
+    font-family: "Comic Sans MS", "Chalkboard SE", sans-serif;
+}
+
+.math-formula {
+    font-style: italic;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 650px;
+    background-color: cyan;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+
+.sticky-menu {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    padding: 15px;
+    z-index: 100;
+}
+.sticky-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.sticky-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+}
+
+
+.device-label span {
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 767px) {
+    .device-label .mobile { display: block; }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .device-label .tablet { display: block; }
+}
+
+@media (min-width: 1025px) {
+    .device-label .desktop { display: block; }
+}
+
+
+#blueCircle {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 50%;
+    position: fixed; 
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    top: -100px;
+    left: -100px;
+}
